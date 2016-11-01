@@ -23,7 +23,13 @@ public class PersonQueue {
     }
     
     public void addPersonToLine(Person p) {
-        this.theLine.add(p);
+        if(this.theLine.size() < lineCapacity) {
+            this.theLine.add(p);
+            System.out.println("Added " + p.getName() + " to "  + lineName + "'s line");
+        } else {
+            System.out.println("Line is full come back later");
+        }
+        
     }
 
     /**

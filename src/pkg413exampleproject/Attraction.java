@@ -12,6 +12,7 @@ package pkg413exampleproject;
 public class Attraction {
     private String attractionName;
     private PersonQueue attractionLine;
+    private double attractionPrice;
     
     public Attraction(String name, int lineCapacity) {
         attractionName = name;
@@ -45,5 +46,19 @@ public class Attraction {
      */
     public void setAttractionLine(PersonQueue attractionLine) {
         this.attractionLine = attractionLine;
+    }
+
+    /**
+     * @return the attractionPrice
+     */
+    public double getAttractionPrice() {
+        return attractionPrice;
+    }
+
+    /**
+     * @param attractionPrice the attractionPrice to set
+     */
+    public void setAttractionPrice(double attractionPrice) {
+        this.attractionPrice = attractionPrice;
     }
 }

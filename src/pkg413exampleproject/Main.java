@@ -21,9 +21,9 @@ public class Main {
     }
     
     public static void initComp() {
-        Attraction sidewinder = new Attraction("SideWinder", 50);
+        Attraction sidewinder = new Attraction("SideWinder", 15);
         
-        for(int i = 0; i < 10; i++) {
+        for(int i = 0; i < 20; i++) {
             String personName = "Person " + i;
             Person person = new Person(personName);
             sidewinder.getAttractionLine().addPersonToLine(person);
