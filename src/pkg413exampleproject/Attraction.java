@@ -12,6 +12,7 @@ package pkg413exampleproject;
 public class Attraction {
     private String attractionName;
     private PersonQueue attractionLine;
+    private int maxWeightCapacity;
     
     public Attraction(String name, int lineCapacity) {
         attractionName = name;
@@ -45,5 +46,19 @@ public class Attraction {
      */
     public void setAttractionLine(PersonQueue attractionLine) {
         this.attractionLine = attractionLine;
+    }
+
+    /**
+     * @return the maxWeightCapacity
+     */
+    public int getMaxWeightCapacity() {
+        return maxWeightCapacity;
+    }
+
+    /**
+     * @param maxWeightCapacity the maxWeightCapacity to set
+     */
+    public void setMaxWeightCapacity(int maxWeightCapacity) {
+        this.maxWeightCapacity = maxWeightCapacity;
     }
 }

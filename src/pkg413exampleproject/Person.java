@@ -11,6 +11,7 @@ package pkg413exampleproject;
  */
 public class Person {
     private String name;
+    private int weight;
     
     public Person(String personName) {
         this.name = personName;
@@ -28,6 +29,20 @@ public class Person {
      */
     public void setName(String name) {
         this.name = name;
+    }
+
+    /**
+     * @return the weight
+     */
+    public int getWeight() {
+        return weight;
+    }
+
+    /**
+     * @param weight the weight to set
+     */
+    public void setWeight(int weight) {
+        this.weight = weight;
     }
 
 }
